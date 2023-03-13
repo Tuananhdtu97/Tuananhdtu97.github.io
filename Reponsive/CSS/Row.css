@@ -1,0 +1,50 @@
+/* Vai trò: */
+/* 1. Chứa các columns, giúp các columns nằm theo chiều ngang
+/* 2. Khi tổng chiều ngang columns vượt quá kích thước Row, cho Columns xuống hàng
+/* 3. Loại bỏ khoảng thừa do gutters tạo ra ở 2 phía */
+
+/* row */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+    
+}
+/* > Tablet */
+@media (min-width: 740px ){
+    .wide{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+}
+/* > PC low resolution */
+@media  (min-width: 1024px ) and (max-width:1239px){
+    .wide.row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .wide .row.sm-gutter{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .wide .row.sm-gutter .col{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+/* PC low resolution > */
+@media (min-width: 1113px){
+    .row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .row.sm-gutter{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .row.sm-gutter .col{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
