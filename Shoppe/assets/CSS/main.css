@@ -931,7 +931,7 @@
 .category{
     background-color: var(--while--color);
     border-radius: 2px;
-    
+    height: 310px;
 }
 .categor__heading{
     font-size: 1.6rem;
@@ -953,6 +953,7 @@
     list-style: none;
     margin: 0 auto;
     padding-bottom: 8px;
+    height: 1002px;
 }
 .category-item{
     
